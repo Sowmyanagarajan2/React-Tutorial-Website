@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Flow for Beginners</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">⚛ React Flow</div>
+      <div class="nav-links">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#examples">Examples</a>
+        <a href="#practice">Practice</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="badge">Beginner Friendly Tutorial Website</p>
+      <h1>Learn React with Real-Time Examples</h1>
+      <p>
+        A simple interactive website for students to understand React step by step:
+        Components, Props, State, Events, useEffect, API, Context and Redux.
+      </p>
+      <a href="#roadmap" class="start-btn">Start Learning</a>
+    </div>
+  </header>
+
+  <section id="roadmap" class="section">
+    <h2>React Learning Roadmap</h2>
+    <p class="section-subtitle">Click each step to reveal a simple meaning.</p>
+
+    <div class="roadmap" id="roadmapCards"></div>
+  </section>
+
+  <section id="examples" class="section cream">
+    <h2>Real-Time Examples</h2>
+    <p class="section-subtitle">React becomes easy when students connect it with real apps.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showExample('amazon')">Amazon Cart</button>
+      <button class="tab-btn" onclick="showExample('weather')">Weather App</button>
+      <button class="tab-btn" onclick="showExample('login')">Login Page</button>
+      <button class="tab-btn" onclick="showExample('dark')">Dark Mode</button>
+    </div>
+
+    <div class="example-box" id="exampleBox"></div>
+  </section>
+
+  <section id="practice" class="section">
+    <h2>Mini Interactive Practice</h2>
+    <p class="section-subtitle">Students can click and understand state changes live.</p>
+
+    <div class="practice-grid">
+      <div class="demo-card">
+        <h3>useState: Like Button ❤️</h3>
+        <p>Clicking changes the state and updates the UI.</p>
+        <button onclick="increaseLike()">Like <span id="likeCount">0</span></button>
+      </div>
+
+      <div class="demo-card">
+        <h3>Conditional Rendering 🔐</h3>
+        <p>Show different UI based on login state.</p>
+        <button onclick="toggleLogin()" id="loginBtn">Login</button>
+        <p id="loginStatus" class="status">You are logged out.</p>
+      </div>
+
+      <div class="demo-card">
+        <h3>Theme State 🌙</h3>
+        <p>Change the website mood using state.</p>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="section cream">
+    <h2>React Quick Quiz</h2>
+    <p class="section-subtitle">A small quiz to check beginner understanding.</p>
+
+    <div class="quiz-card">
+      <h3 id="quizQuestion"></h3>
+      <div id="quizOptions"></div>
+      <p id="quizResult"></p>
+      <button onclick="nextQuestion()" class="next-btn">Next Question</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Beginner Project Flow</h2>
+    <div class="project-flow">
+      <div>Counter App</div>
+      <div>Dark Mode</div>
+      <div>Todo App</div>
+      <div>Student Form</div>
+      <div>Weather App</div>
+      <div>Product Page</div>
+      <div>Cart App</div>
+      <div>Redux Cart</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made for React beginners • Learn by seeing, clicking and building ⚛</p>
+  </footer>
+
+  <script src=".script.js"></script>
+</body>
+</html>
